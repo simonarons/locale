@@ -8,10 +8,6 @@ if ! [[ -d /usr/share/i18n/locales ]]; then
         echo "$(tput setaf 9)error:$(tput sgr0) locale directory '/usr/share/i18n/locales' does not exist"
         exit 1
 fi
-# if ! [[ -f en_SE ]]; then
-#         echo "$(tput setaf 9)error:$(tput sgr0) locale file 'en_se' does not exist in this directory"
-#         exit 1
-# fi
 
 if ! [[ -f /etc/locale.gen ]]; then
         echo "$(tput setaf 9)error:$(tput sgr0) '/etc/locale.gen' does not exist'"
